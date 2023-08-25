@@ -1,0 +1,21 @@
+<form>
+    <div>
+        <h5>Descripcion de la tarea</h5>
+        <textarea (input)="handleTask($event)"></textarea>
+    </div>
+    <div>
+        <h5>Responsable</h5>
+        <input type="text" (input)="handleResponsable($event)"/>
+    </div>
+    <div>
+        <h5>Duracion (dias)</h5>
+        <input type="number" (input)="handleDays($event)"/>
+    </div>
+    <div>
+        <h5>Fecha de inicio</h5>
+        <input type="date" (input)="handleStartDate($event)"/>
+    </div>
+    <div>
+        <button type="button" (click)="save();">Save</button>
+    </div>
+</form>
